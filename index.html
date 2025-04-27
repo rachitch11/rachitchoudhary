@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio - About</title>
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+  <style>
+    /* Optional: Smooth scroll if you link to this section via nav */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+  <style>
+    .card {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+    }
+  
+    .card:hover {
+      transform: scale(1.02);
+    }
+  
+    .card-body .btn {
+      margin-top: 0.5rem;
+    }
+  
+  </style>
+  <style>
+    #skills .card {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease;
+    }
+  
+    #skills .card:hover {
+      transform: translateY(-5px);
+    }
+  
+    #skills .card img {
+      max-height: 60px;
+      width: auto;
+    }
+  
+    #skills .card-body .btn {
+      margin-top: 0.5rem;
+    }
+  </style>
+  <style>
+    .btn-circle {
+      width: 50px;
+      height: 50px;
+      padding: 0;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .btn-pink {
+      background-color: #ff4c93;
+      border: none;
+    }
+  
+    .btn-pink:hover {
+      background-color: #e04384;
+    }
+  
+    .btn-pink img {
+      filter: brightness(0) invert(1); /* Makes icons white */
+    }
+  </style>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  
+    .navbar .nav-link {
+      color: #fff;
+      transition: color 0.3s;
+    }
+  
+    .navbar .nav-link:hover {
+      color: #ff4c93;
+    }
+  
+    .navbar-brand {
+      font-weight: bold;
+    }
+  </style>
+  
+</head>
+<body>
+
+      <!-- Sticky Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#">MyPortfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+ 
+
+  <!-- About Section -->
+  <section id="about" class="py-5 bg-white">
+    <div class="container text-center">
+      <!-- Section Heading -->
+      <h2 class="display-4 mb-4">About</h2>
+
+      <!-- Profile Image -->
+      <div class="mb-4">
+        <img src="images/about.jpg" alt="Profile Picture"
+             class="rounded-circle border border-dark border-3"
+             style="width: 200px; height: 200px; object-fit: cover;">
+      </div>
+
+      <!-- About Text -->
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+          <p class="lead">
+            Hey ! This is Rachit ,A  data analytics expert, utilizing  Power BI and ChatGPT to convert complex information into meaningful and actionable insights. I focus on creating dynamic dashboards, streamlining reporting workflows, and delivering real-time analysis .
+By integrating cutting-edge visualisation techniques with AI-powered data analysis, I assist businesses in discovering hidden trends, improving operational efficiency, and identifying growth opportunities. My tailored solutions are designed to drive smarter decision-making, enhance profitability, and support long-term success.
+          </p>
+          <p class="lead">
+            This portfolio is a reflection of my journey — showcasing my work, my approach to problem-solving, and the creative spirit I bring to every project.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+<section id="projects" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center display-4 mb-5">Projects</h2>
+      <div class="row justify-content-center">
+  
+        <!-- Project 1 -->
+        <div class="col-md-6 col-lg-4 mb-4 d-flex">
+          <div class="card w-100">
+            <img src="images/projects/1.jpg" class="card-img-top" alt="Project 1">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">SuperStoreSales Dashboard</h5>
+              <p class="card-text">Designed an interactive dashboard to monitor and analyze online sales performance.
+
+                Applied advanced parameters, filters, and slicers for in-depth data exploration.
+                
+                Created connections, merged tables, and built calculations for dynamic reporting.
+                
+                Utilized customized visualizations including bar charts, pie charts, donut charts, scatter plots, maps, and more.</p>
+              <div class="mt-auto">
+                <a href="https://github.com/rachitch11/EcommereceClientDashboard/blob/main/README.md" class="btn btn-outline-primary btn-sm me-2">Blog Post</a>
+                <a href="https://github.com/rachitch11/SpuerStoreSalesDashboard" class="btn btn-outline-secondary btn-sm">Source Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Project 2 -->
+        <div class="col-md-6 col-lg-4 mb-4 d-flex">
+          <div class="card w-100">
+            <img src="images/projects/2.jpg" class="card-img-top" alt="Project 2">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Client E commerce Sales Dashboard</h5>
+              <p class="card-text">In this project, I leveraged time series analysis techniques to uncover meaningful business insights and forecast sales with high accuracy. I also designed interactive dashboards to present real-time data clearly, helping businesses make faster, smarter decisions. By combining advanced analytics with powerful visualization tools, the project successfully supported strategic planning and enhanced overall profitability.</p>
+              <div class="mt-auto">
+                <a href="https://github.com/rachitch11/SpuerStoreSalesDashboard/blob/main/README.md" class="btn btn-outline-primary btn-sm me-2">Blog Post</a>
+                <a href="https://github.com/rachitch11/EcommereceClientDashboard" class="btn btn-outline-secondary btn-sm">Source Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Project 3 -->
+        <div class="col-md-6 col-lg-4 mb-4 d-flex">
+          <div class="card w-100">
+            <img src="images/projects/3.jpg" class="card-img-top" alt="Project 3">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Hospatality Domain Dashboard</h5>
+              <p class="card-text">Created essential metrics according to stakeholder requirements, built a dashboard based on the provided mock-up, and generated additional insights beyond the initial brief. Strengthened skills in data visualization, metric creation, and insight generation. Improved the ability to align analytics work with business needs, enhancing decision-making and delivering greater value through comprehensive data analysis.</p>
+              <div class="mt-auto">
+                <a href="https://github.com/rachitch11/HospatilityDomainDashboard/blob/main/README.md" class="btn btn-outline-primary btn-sm me-2">Blog Post</a>
+                <a href="https://github.com/rachitch11/HospatilityDomainDashboard" class="btn btn-outline-secondary btn-sm">Source Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+<section id="skills" class="py-5 bg-white">
+    <div class="container">
+      <h2 class="text-center display-4 mb-5">Skills</h2>
+      <div class="row justify-content-center">
+  
+        <!-- Skill 1 -->
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-4 d-flex">
+          <div class="card w-100 text-center">
+            <img src="images/skills/1.png" class="card-img-top mx-auto mt-3" alt="Python" style="width: 60px; height: 60px;">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Python</h5>
+              <p class="card-text">Python is a versatile programming language loved for its simplicity and wide use in web development, data science, machine learning, and automation. Thanks to its clean syntax and powerful libraries, Python helps developers create efficient and scalable applications with ease.</p>
+              <a href="https://www.udemy.com/course/python-masterclass-course/" class="mt-auto btn btn-outline-primary btn-sm">Link to course or bootcamp</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Skill 2 -->
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-4 d-flex">
+          <div class="card w-100 text-center">
+            <img src="images/skills/2.png" class="card-img-top mx-auto mt-3" alt="Data Visualization" style="width: 60px; height: 60px;">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Data Visualization</h5>
+              <p class="card-text">Data visualization is the process of transforming raw data into visual formats like charts, graphs, and maps to make complex information easy to understand. Effective data visualization helps businesses and analysts identify patterns, trends, and insights for smarter decision-making.</p>
+              <a href="https://www.udemy.com/course/mastering-the-art-of-data-visualization-2020/" class="mt-auto btn btn-outline-primary btn-sm">Link to course or bootcamp</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Skill 3 -->
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-4 d-flex">
+          <div class="card w-100 text-center">
+            <img src="images/skills/3.png" class="card-img-top mx-auto mt-3" alt="SQL" style="width: 60px; height: 60px;">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">MySQL</h5>
+              <p class="card-text">MySQL is a popular open-source relational database management system used to store, organize, and manage data efficiently. Known for its speed, reliability, and scalability, MySQL powers millions of websites, applications, and data-driven solutions worldwide.</p>
+              <a href="https://www.udemy.com/course/the-ultimate-mysql-bootcamp-go-from-sql-beginner-to-expert/" class="mt-auto btn btn-outline-primary btn-sm">Link to course or bootcamp</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Skill 4 -->
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-4 d-flex">
+          <div class="card w-100 text-center">
+            <img src="images/skills/4.png" class="card-img-top mx-auto mt-3" alt="Data Storytelling" style="width: 60px; height: 60px;">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Data Storytelling</h5>
+              <p class="card-text">Data storytelling combines data visualization, narrative techniques, and insights to present complex information in an engaging, easy-to-understand way. It helps businesses communicate key findings, drive better decisions, and create a lasting impact through compelling data-driven stories.</p>
+              <a href="https://www.udemy.com/course/mastering-the-art-of-data-visualization-2020/" class="mt-auto btn btn-outline-primary btn-sm">Link to course or bootcamp</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Skill 5 -->
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-4 d-flex">
+          <div class="card w-100 text-center">
+            <img src="images/skills/5.png" class="card-img-top mx-auto mt-3" alt="Machine Learning" style="width: 60px; height: 60px;">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">PowerBI</h5>
+              <p class="card-text">Power BI is a powerful business analytics tool by Microsoft that transforms raw data into interactive dashboards and insightful reports. With its user-friendly interface and strong data integration capabilities, Power BI helps organizations make smarter, data-driven decisions.</p>
+              <a href="https://www.udemy.com/course/microsoft-power-bi-up-running-with-power-bi-desktop/" class="mt-auto btn btn-outline-primary btn-sm">Link to course or bootcamp</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Skill 6 -->
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-4 d-flex">
+          <div class="card w-100 text-center">
+            <img src="images/skills/6.png" class="card-img-top mx-auto mt-3" alt="Excel" style="width: 60px; height: 60px;">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Excel</h5>
+              <p class="card-text">Microsoft Excel is a powerful spreadsheet tool used for data analysis, financial modeling, reporting, and task management across industries. With features like formulas, charts, and pivot tables, Excel simplifies complex calculations and enhances productivity for businesses and individuals.</p>
+              <a href="https://www.udemy.com/course/microsoft-excel-2013-from-beginner-to-advanced-and-beyond/" class="mt-auto btn btn-outline-primary btn-sm">Link to course or bootcamp</a>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+<section id="contact" class="py-5 bg-dark text-white">
+    <div class="container text-center">
+      <h2 class="mb-4">Contact Me</h2>
+  
+      <div class="row justify-content-center mb-4">
+        <div class="col-12 col-md-6 d-flex justify-content-center align-items-center mb-3 mb-md-0">
+          <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email" width="24" class="me-2">
+          <span>rachit.jb77@gmail.com</span>
+        </div>
+        <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+          <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Phone" width="24" class="me-2">
+          <span>+91 7983863521</span>
+        </div>
+      </div>
+  
+      <div class="d-flex justify-content-center flex-wrap gap-3">
+        <a href="https://www.linkedin.com/in/rachit-choudhary1/" class="btn btn-circle btn-pink" data-bs-toggle="tooltip" title="LinkedIn">
+          <img src="icons/linkedin.png" alt="LinkedIn" width="24">
+        </a>
+        <a href="https://x.com/Rachitc11" class="btn btn-circle btn-pink" data-bs-toggle="tooltip" title="Twitter">
+          <img src="icons/twitter.png" alt="Twitter" width="24">
+        </a>
+        <a href="https://github.com/rachitch11" class="btn btn-circle btn-pink" data-bs-toggle="tooltip" title="GitHub">
+          <img src="icons/github.png" alt="GitHub" width="24">
+        </a>
+        <a href="#" class="btn btn-circle btn-pink" data-bs-toggle="tooltip" title="Medium">
+          <img src="icons/medium.png" alt="Medium" width="24">
+        </a>
+        <a href="#" class="btn btn-circle btn-pink" data-bs-toggle="tooltip" title="YouTube">
+          <img src="icons/youtube.png" alt="YouTube" width="24">
+        </a>
+      </div>
+    </div>
+    </div>
+  </section>
+
+ 
+  
+
+
+  <!-- Bootstrap JS Bundle (includes Popper) -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+
+<script>
+    const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  </script>
+  
+</body>
+</html>

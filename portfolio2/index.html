@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio - About</title>
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+  <style>
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Card Styles */
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+
+  .card:hover {
+    transform: scale(1.02);
+  }
+
+  .card-body .btn {
+    margin-top: 0.5rem;
+  }
+
+  /* Skills Section */
+  #skills .card {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+  }
+
+  #skills .card:hover {
+    transform: translateY(-5px);
+  }
+
+  #skills .card img {
+    max-height: 60px;
+    width: auto;
+  }
+
+  #skills .card-body .btn {
+    margin-top: 0.5rem;
+  }
+
+  /* Button Styles */
+  .btn-circle {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-pink {
+    background-color: #ff4c93;
+    border: none;
+  }
+
+  .btn-pink:hover {
+    background-color: #e04384;
+  }
+
+  .btn-pink img {
+    filter: brightness(0) invert(1);
+  }
+
+  /* Navbar Styles */
+  .navbar .nav-link {
+    color: #fff;
+    transition: color 0.3s;
+  }
+
+  .navbar .nav-link:hover {
+    color: #ff4c93;
+  }
+
+  .navbar-brand {
+    font-weight: bold;
+  }
+
+  /* Dark Mode */
+  body.dark-mode {
+    background-color: #121212 !important;
+    color: #f1f1f1 !important;
+  }
+
+  body.dark-mode .navbar {
+    background-color: #1f1f1f !important;
+  }
+
+  body.dark-mode .navbar .nav-link {
+    color: #ffffff !important;
+  }
+
+  body.dark-mode .navbar .nav-link:hover {
+    color: #ff4c93 !important;
+  }
+
+  body.dark-mode section.bg-light {
+    background-color: #1f1f1f !important;
+  }
+
+  body.dark-mode section.bg-white {
+    background-color: #121212 !important;
+  }
+
+  body.dark-mode .card {
+    background-color: #1e1e1e !important;
+    color: #f1f1f1;
+    border-color: #333;
+  }
+
+  body.dark-mode .btn-outline-dark {
+    border-color: #fff;
+    color: #fff;
+  }
+
+  body.dark-mode .btn-outline-dark:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  body.dark-mode .btn-outline-secondary {
+    border-color: #ccc;
+    color: #ccc;
+  }
+
+  body.dark-mode .btn-outline-secondary:hover {
+    background-color: #ccc;
+    color: #000;
+  }
+
+  body.dark-mode .btn-outline-primary {
+    border-color: #66b2ff;
+    color: #66b2ff;
+  }
+
+  body.dark-mode .btn-outline-primary:hover {
+    background-color: #66b2ff;
+    color: #000;
+  }
+</style>
+
+
+  
+</head>
+<body>
+
+<!-- Sticky Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="#">MyPortfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#work-experience">Work Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>        
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item">
+            <button id="themeToggleBtn" class="btn btn-outline-light btn-sm ms-3" title="Toggle Theme">🌙</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ✅ Add this #home section near the top of the body for anchor to work -->
+<section id="home" class="py-5">
+  <div class="container text-center">
+    <h1 class="display-4">Welcome to My Portfolio</h1>
+  </div>
+</section>
+
+
+ 
+
+  <!-- About Section -->
+  <section id="about" class="py-5 bg-white">
+    <div class="container text-center">
+      <!-- Section Heading -->
+      <h2 class="display-4 mb-4">About</h2>
+
+      <!-- Profile Image -->
+      <div class="mb-4">
+        <img src="images/about.jpg" alt="Profile Picture"
+             class="rounded-circle border border-dark border-3"
+             style="width: 200px; height: 200px; object-fit: cover;">
+      </div>
+
+      <!-- About Text -->
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+          <p class="lead">
+            Data Analytics Engineer & AI Product Strategist(AI product developer)  with hands-on experience developing and implementing full-stack Generative AI applications with Tesseract OCR, OpenAI, LangChain, Streamlit, Pandas, SQLite, and Google Sheets API. Created and implemented a lot of AI-driven web applications that tackle real-world problems in the fields of natural language processing, healthcare, finance, and human resources. 
+            Competent in Big Data, Azure Cloud, Power BI, SQL, Python, and Databricks; passionate about low-code AI development and data engineering. Adept at automating intricate data workflows, building interactive dashboards, and extracting useful information from sizable, disorganised datasets to aid in strategic decision-making. 
+            Experienced in using using Azure Data Factory to create reliable ETL pipelines, Databricks and PySpark to process and analyse massive amounts of data, and data architecture optimisation for dependability, performance, and profitability.
+          </p>
+          <p class="lead">
+            This portfolio is a reflection of my journey — showcasing my work, my approach to problem-solving, and the creative spirit I bring to every project.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+   <!-- Work Experience Section -->
+<section id="work-experience" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center display-4 mb-5">Work Experience</h2>
+    <div class="row justify-content-center">
+      
+      <!-- Experience 1 -->
+      <div class="col-md-6 col-lg-5 mb-4 d-flex">
+        <div class="card w-100">
+          <div class="card-body">
+            <h5 class="card-title">Freelance Data Analyst</h5>
+            <h6 class="card-subtitle mb-2 "> Data Analytics · Jan 2023 – Dec 2024</h6>
+            <p class="card-text">Led end-to-end dashboard projects for clients using Power BI, SQL, and Python, automating reports to deliver real-time business insights and KPI monitoring.
+
+            Built data models and DAX measures to identify market trends, customer behavior, and operational inefficiencies for clients in e-commerce and finance.</p>
+          </div>
+        </div>
+      </div>
+
+            <!-- Experience 2 -->
+      <div class="col-md-6 col-lg-5 mb-4 d-flex">
+        <div class="card w-100">
+          <div class="card-body">
+            <h5 class="card-title">AI & Data Projects Developer</h5>
+            <h6 class="card-subtitle mb-2 ">Self-Initiated Projects  · Jan 2025 - Present</h6>
+            <p class="card-text">Built the AI Market Analyst, a real-time stock and news intelligence platform that uses natural language querying, portfolio tracking, and GPT-4-powered summaries—making financial insights accessible to non-experts.
+
+            Created impactful tools like the Resume Analyzer, Medical Report Analyzer, and Weather ETL Dashboard—each solving real-life problems using GenAI, data engineering, and visual analytics to simplify complex decision-making</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="py-5 bg-white">
+  <div class="container">
+    <h2 class="text-center display-4 mb-5">Projects</h2>
+    <div class="row justify-content-center">
+
+      <!-- Project 1 -->
+      <div class="col-md-6 col-lg-4 mb-4 d-flex">
+        <div class="card w-100">
+          <img src="images/projects/1.jpg" class="card-img-top" alt="Project 1">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">SuperStoreSales Dashboard</h5>
+            <p class="card-text">1. Applied advanced data analysis techniques, including time series analysis and accurate sales forecasting, to uncover insights that support strategic decision-making and growth planning.
+            2. Designed interactive sales dashboards in Power BI with real-time visualizations, filters, slicers, and region-wise map charts to drive data-informed business success.</p>
+            <div class="mt-auto">
+              <a href="https://github.com/rachitch11/SpuerStoreSalesDashboard/blob/main/README.md" class="btn btn-outline-primary btn-sm me-2">Blog Post</a>
+              <a href="https://github.com/rachitch11/SpuerStoreSalesDashboard/tree/main" class="btn btn-outline-secondary btn-sm">Source Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-md-6 col-lg-4 mb-4 d-flex">
+        <div class="card w-100">
+          <img src="images/projects/2.jpg" class="card-img-top" alt="Project 2">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Ecommerece Sales Visualization</h5>
+            <p class="card-text">1. Built interactive dashboards to analyze online sales data using advanced filters, slicers, and user-driven parameters for dynamic insights.
+            2. Performed data modeling and customisation, including complex joins, calculations, and diverse visualizations like bar, pie, doughnut, line, area, scatter charts, and maps</p>
+            <div class="mt-auto">
+              <a href="https://github.com/rachitch11/EcommereceClientDashboard/blob/main/README.md" class="btn btn-outline-primary btn-sm me-2">Blog Post</a>
+              <a href="https://github.com/rachitch11/EcommereceClientDashboard" class="btn btn-outline-secondary btn-sm">Source Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col-md-6 col-lg-4 mb-4 d-flex">
+        <div class="card w-100">
+          <img src="images/projects/3.jpg" class="card-img-top" alt="Project 3">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Real-time Data Processing with Azure Databricks</h5>
+            <p class="card-text">A real-time data pipeline that captures streaming data from IoT or social media feeds using Azure Event Hubs. Data is processed with Azure Databricks, stored in Delta Lake, and visualized through Power BI.</p>
+            <div class="mt-auto">
+              <a href="https://github.com/rachitch11/Real-Time-Streaming-with-Azure-Databricks/blob/main/README.md" class="btn btn-outline-primary btn-sm me-2">Blog Post</a>
+              <a href="https://github.com/rachitch11/Real-Time-Streaming-with-Azure-Databricks/blob/main/Real-time%20Data%20Processing%20with%20Azure%20Databricks%20(and%20Event%20Hubs).ipynb" class="btn btn-outline-secondary btn-sm">Source Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!--  AI Projects Section -->
+<section id="ai-projects" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center display-4 mb-5">Live Deployed AI Projects</h2>
+    <div class="row justify-content-center">
+
+      <!-- AI Project 1 -->
+      <div class="col-md-6 col-lg-4 mb-4 d-flex">
+        <div class="card w-100">
+          <img src="images/projects/4.jpg" class="card-img-top" alt="AI Project 1">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Medical Report Analyzer</h5>
+            <p class="card-text">1. Built a Streamlit app that lets users upload medical PDFs/images, extracts diagnostic values using Tesseract OCR, and identifies abnormal parameters.
+
+            2.Generates doctor-style impressions using GPT-4 and visualizes health trends with Altair graphs for longitudinal insights.
+
+            3.Integrated Google Sheets API for authentication, user tracking, and enforcing per-user usage limits with real-time login stats</p>
+            <div class="mt-auto">
+              <a href="https://medicalreporanalyzer.streamlit.app/" class="btn btn-outline-primary btn-sm me-2">Live Demo</a>
+              <a href="https://github.com/rachitch11/sourcecode/" class="btn btn-outline-secondary btn-sm">Source Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI Project 2 -->
+      <div class="col-md-6 col-lg-4 mb-4 d-flex">
+        <div class="card w-100">
+          <img src="images/projects/5.jpg" class="card-img-top" alt="AI Project 2">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Resume Analyzer & Job Match Bot</h5>
+            <p class="card-text">1.Developed an AI-powered career tool where users upload resumes and job descriptions to get match scores, gap analysis, and improvement suggestions via GPT-4.
+
+            2.Supports PDF extraction with PyPDF2, vector-based similarity matching, and AI summarization of candidate-job alignment.
+
+            3.Streamlit UI includes email/password login with Google Sheets storage, daily usage tracking, and user-specific dashboards.</p>
+            <div class="mt-auto">
+              <a href="https://resumeanalyzerbot.streamlit.app/" class="btn btn-outline-primary btn-sm me-2">Live Demo</a>
+              <a href="https://github.com/rachitch11/sourcecode/" class="btn btn-outline-secondary btn-sm">Source Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI Project 3 -->
+      <div class="col-md-6 col-lg-4 mb-4 d-flex">
+        <div class="card w-100">
+          <img src="images/projects/6.jpg" class="card-img-top" alt="AI Project 3">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">AI Market Analyst(Live Stock + News Intelligence Platform)</h5>
+            <p class="card-text">
+            1.Created a personal stock analyst tool where users can ask GPT-4 natural-language questions about real-time stock data and related global news.
+
+            2.Uses Yahoo Finance and NewsAPI to fetch and analyze live market prices and headlines, then generates smart summaries with GPT.
+
+            3.Includes Google Sheets-based user management, portfolio tracking (up to 5 stocks), and a dashboard with charts, export to CSV, and usage limits.</p>
+            <div class="mt-auto">
+              <a href="https://ai-market-analyst.streamlit.app/" class="btn btn-outline-primary btn-sm me-2">Live Demo</a>
+              <a href="https://github.com/rachitch11/sourcecode/" class="btn btn-outline-secondary btn-sm">Source Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI Project 4 -->
+      <div class="col-md-6 col-lg-4 mb-4 d-flex">
+        <div class="card w-100">
+          <img src="images/projects/7.jpg" class="card-img-top" alt="AI Project 4">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Weather Data ETL + Streamlit App</h5>
+            <p class="card-text">
+            1.Built a modular ETL pipeline using Python scripts to extract, transform, and store live weather data into a SQLite database.
+
+            2.A Streamlit dashboard allows dynamic city search, visualizes real-time weather metrics with charts, and optionally saves entries to the database.
+
+            3.Includes support for running the ETL via terminal and managing historical city weather logs from a local UI.</p>
+            <div class="mt-auto">
+              <a href="https://weatheretldashboard.streamlit.app/" class="btn btn-outline-primary btn-sm me-2">Live Demo</a>
+              <a href="https://github.com/rachitch11/weather_etl_dashboard" class="btn btn-outline-secondary btn-sm">Source Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+ <!-- Skills Section -->
+<section id="skills" class="py-5 bg-white">
+  <div class="container">
+    <h2 class="text-center display-4 mb-5">Skills</h2>
+    <div class="row justify-content-center">
+
+      <!-- Python 1-->
+      <div class="col-sm-12 col-md-6 col-lg-4 mb-4 d-flex">
+        <div class="card w-100 text-center">
+          <img src="images/skills/python.png" class="card-img-top mx-auto mt-3" alt="Python" style="width: 60px; height: 60px;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Python</h5>
+            <p class="card-text">Powerful language for data analysis, automation, AI, and application development with vast libraries like Pandas and Scikit-learn.</p>
+            <a href="https://www.udemy.com/course/python-masterclass-course/" class="mt-auto btn btn-outline-primary btn-sm">Link to course</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SQL 2-->
+      <div class="col-sm-12 col-md-6 col-lg-4 mb-4 d-flex">
+        <div class="card w-100 text-center">
+          <img src="images/skills/sql.png" class="card-img-top mx-auto mt-3" alt="SQL" style="width: 60px; height: 60px;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">SQL</h5>
+            <p class="card-text">Used to query and manage structured data in relational databases like MySQL, PostgreSQL, and SQL Server.</p>
+            <a href="https://www.udemy.com/course/the-ultimate-mysql-bootcamp-go-from-sql-beginner-to-expert/" class="mt-auto btn btn-outline-primary btn-sm">Link to course</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Power BI 3-->
+      <div class="col-sm-12 col-md-6 col-lg-4 mb-4 d-flex">
+        <div class="card w-100 text-center">
+          <img src="images/skills/powerbi.png" class="card-img-top mx-auto mt-3" alt="Power BI" style="width: 60px; height: 60px;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Power BI</h5>
+            <p class="card-text">A Microsoft tool for building interactive dashboards and business reports to uncover insights from data.</p>
+            <a href="https://www.udemy.com/course/microsoft-power-bi-up-running-with-power-bi-desktop/" class="mt-auto btn btn-outline-primary btn-sm">Link to course</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Data Analysis & Visualization 4-->
+      <div class="col-sm-12 col-md-6 col-lg-4 mb-4 d-flex">
+        <div class="card w-100 text-center">
+          <img src="images/skills/visualization.png" class="card-img-top mx-auto mt-3" alt="Data Visualization" style="width: 60px; height: 60px;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Data Analysis & Visualization</h5>
+            <p class="card-text">Transforming raw data into actionable insights using tools like matplotlib, seaborn, and Plotly.</p>
+            <a href="https://www.udemy.com/course/udemy-data-analytics-course/" class="mt-auto btn btn-outline-primary btn-sm">Link to course</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Data Engineering 5-->
+      <div class="col-sm-12 col-md-6 col-lg-4 mb-4 d-flex">
+        <div class="card w-100 text-center">
+          <img src="images/skills/dataengineering.png" class="card-img-top mx-auto mt-3" alt="Data Engineering" style="width: 60px; height: 60px;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Data Engineering</h5>
+            <p class="card-text">Designing, building, and maintaining scalable data pipelines for large-scale data processing and storage.</p>
+            <a href="https://www.udemy.com/course/data-engineering-using-azure/" class="mt-auto btn btn-outline-primary btn-sm">Link to course</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ETL 6-->
+      <div class="col-sm-12 col-md-6 col-lg-4 mb-4 d-flex">
+        <div class="card w-100 text-center">
+          <img src="images/skills/etl.png" class="card-img-top mx-auto mt-3" alt="ETL" style="width: 60px; height: 60px;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">ETL</h5>
+            <p class="card-text">ETL (Extract, Transform, Load) is used to collect, clean, and organize raw data into meaningful business formats.</p>
+            <a href="https://www.udemy.com/course/datawarehouse-etl-tutorials/" class="mt-auto btn btn-outline-primary btn-sm">Link to course</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Azure Databricks 7-->
+      <div class="col-sm-12 col-md-6 col-lg-4 mb-4 d-flex">
+        <div class="card w-100 text-center">
+          <img src="images/skills/databricks.png" class="card-img-top mx-auto mt-3" alt="Azure Databricks" style="width: 60px; height: 60px;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Azure Databricks</h5>
+            <p class="card-text">A unified data platform for big data analytics, combining Apache Spark with Azure cloud services.</p>
+            <a href="https://www.udemy.com/course/databricks-with-pyspark/" class="mt-auto btn btn-outline-primary btn-sm">Link to course</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Azure Data Factory 8-->
+      <div class="col-sm-12 col-md-6 col-lg-4 mb-4 d-flex">
+        <div class="card w-100 text-center">
+          <img src="images/skills/adf.png" class="card-img-top mx-auto mt-3" alt="Azure Data Factory" style="width: 60px; height: 60px;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Azure Data Factory</h5>
+            <p class="card-text">Cloud-based ETL and data integration tool that orchestrates and automates data movement and transformation.</p>
+            <a href="https://www.udemy.com/course/azure-data-factory-course/" class="mt-auto btn btn-outline-primary btn-sm">Link to course</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PySpark 9-->
+      <div class="col-sm-12 col-md-6 col-lg-4 mb-4 d-flex">
+        <div class="card w-100 text-center">
+          <img src="images/skills/pyspark.png" class="card-img-top mx-auto mt-3" alt="PySpark" style="width: 60px; height: 60px;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">PySpark</h5>
+            <p class="card-text">Python API for Apache Spark, used to process large-scale datasets with distributed computing capabilities.</p>
+            <a href="https://www.udemy.com/course/apache-spark-with-python/" class="mt-auto btn btn-outline-primary btn-sm">Link to course</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Prompt Engineering 10-->
+      <div class="col-sm-12 col-md-6 col-lg-4 mb-4 d-flex">
+        <div class="card w-100 text-center">
+          <img src="images/skills/prompt.png" class="card-img-top mx-auto mt-3" alt="Prompt Engineering" style="width: 60px; height: 60px;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Prompt Engineering</h5>
+            <p class="card-text">Crafting optimized prompts to guide AI tools like ChatGPT to generate accurate, task-specific outputs.</p>
+            <a href="https://learnprompting.org/" class="mt-auto btn btn-outline-primary btn-sm">Link to course</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI Product Builder / Low-Code AI Developer11 -->
+      <div class="col-sm-12 col-md-6 col-lg-4 mb-4 d-flex">
+        <div class="card w-100 text-center">
+          <img src="images/skills/lowcode.png" class="card-img-top mx-auto mt-3" alt="AI Product Builder" style="width: 60px; height: 60px;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">AI Product Builder / Low-Code AI Developer</h5>
+            <p class="card-text">Builds AI-powered applications quickly using no-code and low-code platforms like Bubble, Glide, and Make.com.</p>
+            <a href="https://www.udemy.com/course/build-ai-apps-without-coding/" class="mt-auto btn btn-outline-primary btn-sm">Link to course</a>
+          </div>
+        </div>
+      </div>
+       <!-- GEN AI Engineer 12 -->
+      <div class="col-sm-12 col-md-6 col-lg-4 mb-4 d-flex">
+        <div class="card w-100 text-center">
+          <img src="images/skills/genai.png" class="card-img-top mx-auto mt-3" alt="GEN AI Engineer" style="width: 60px; height: 60px;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">GEN AI Engineer</h5>
+            <p class="card-text">Builds AI-powered applications quickly using no-code and low-code platforms like Bubble, Glide, and Make.com.</p>
+            <a href="https://www.udemy.com/course/build-ai-apps-without-coding/" class="mt-auto btn btn-outline-primary btn-sm">Link to course</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+ 
+  <!-- Contact Section -->
+<section id="contact" class="py-5 bg-dark text-white">
+    <div class="container text-center">
+      <h2 class="mb-4">Contact Me</h2>
+  
+      <div class="row justify-content-center mb-4">
+        <div class="col-12 col-md-6 d-flex justify-content-center align-items-center mb-3 mb-md-0">
+          <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email" width="24" class="me-2">
+          <span>rachit.jb77@gmail.com</span>
+        </div>
+        <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+          <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Phone" width="24" class="me-2">
+          <span>+91 7983863521</span>
+        </div>
+      </div>
+  
+      <div class="d-flex justify-content-center flex-wrap gap-3">
+        <a href="https://www.linkedin.com/in/rachit-choudhary1/" class="btn btn-circle btn-pink" data-bs-toggle="tooltip" title="LinkedIn">
+          <img src="icons/linkedin.png" alt="LinkedIn" width="24">
+        </a>
+        <a href="https://x.com/Rachitc11" class="btn btn-circle btn-pink" data-bs-toggle="tooltip" title="Twitter">
+          <img src="icons/Twitter.png" alt="Twitter" width="24">
+        </a>
+        <a href="https://github.com/rachitch11" class="btn btn-circle btn-pink" data-bs-toggle="tooltip" title="GitHub">
+          <img src="icons/github.png" alt="GitHub" width="24">
+        </a>
+        <a href="https://discord.gg/G7Uxy7vmd2" class="btn btn-circle btn-pink" data-bs-toggle="tooltip" title="Discord">
+          <img src="icons/discord.png" alt="Discord" width="24">
+        </a>
+        <a href="#" class="btn btn-circle btn-pink" data-bs-toggle="tooltip" title="YouTube">
+          <img src="icons/youtube.png" alt="YouTube" width="24">
+        </a>
+      </div>
+    </div>
+    </div>
+  </section>
+
+ 
+  
+
+
+  <!-- Bootstrap JS Bundle (includes Popper) -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+
+<script>
+    const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  </script>
+  <script>
+  const toggleBtn = document.getElementById('themeToggleBtn');
+  const body = document.body;
+
+  // Load saved preference
+  if (localStorage.getItem('theme') === 'dark') {
+    body.classList.add('dark-mode');
+    toggleBtn.innerText = '☀️';
+  }
+
+  toggleBtn.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    const isDark = body.classList.contains('dark-mode');
+    toggleBtn.innerText = isDark ? '☀️' : '🌙';
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  });
+</script>
+
+  
+</body>
+</html>

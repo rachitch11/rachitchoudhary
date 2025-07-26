@@ -683,28 +683,42 @@
   </script>
 
 <script>
-    const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-    tooltipTriggerList.map(function (tooltipTriggerEl) {
-      return new bootstrap.Tooltip(tooltipTriggerEl)
-    })
-  </script>
-  <script>
+  // Enable Bootstrap tooltips
+  const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+  tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl);
+  });
+</script>
+
+<script>
   const toggleBtn = document.getElementById('themeToggleBtn');
   const body = document.body;
 
-  // Load saved preference
-  if (localStorage.getItem('theme') === 'dark') {
-    body.classList.add('dark-mode');
-    toggleBtn.innerText = '☀️';
+  // Set default theme if none is set
+  if (!localStorage.getItem('theme')) {
+    localStorage.setItem('theme', 'dark');  // Default to dark
   }
 
-  toggleBtn.addEventListener('click', () => {
-    body.classList.toggle('dark-mode');
-    const isDark = body.classList.contains('dark-mode');
-    toggleBtn.innerText = isDark ? '☀️' : '🌙';
-    localStorage.setItem('theme', isDark ? 'dark' : 'light');
-  });
+  // Apply saved theme
+  if (localStorage.getItem('theme') === 'dark') {
+    body.classList.add('dark-mode');
+    if (toggleBtn) toggleBtn.innerText = '☀️';
+  } else {
+    body.classList.remove('dark-mode');
+    if (toggleBtn) toggleBtn.innerText = '🌙';
+  }
+
+  // Toggle theme on button click
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+      const isDark = body.classList.contains('dark-mode');
+      toggleBtn.innerText = isDark ? '☀️' : '🌙';
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+  }
 </script>
+
 
 
 

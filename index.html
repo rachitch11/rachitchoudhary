@@ -230,6 +230,75 @@
 
     </div>
   </section>
+
+
+
+
+
+
+ 
+<!-- Coding UI Box -->
+<div class="card bg-dark text-light mt-4 shadow-lg rounded">
+  <div class="card-header d-flex justify-content-between align-items-center bg-secondary text-white">
+    <div>
+      <span class="text-danger">●</span>
+      <span class="text-warning ms-1">●</span>
+      <span class="text-success ms-1">●</span>
+    </div>
+  </div>
+  <div class="card-body text-center">
+    <pre id="typing-text" class="mb-0 text-success" style="font-family: 'Courier New', monospace; white-space: pre-wrap; word-wrap: break-word;"></pre>
+  </div>
+</div>
+
+<!-- Typing Animation Script -->
+<script>
+  const codeLines = [
+    '<span class="text-info">const</span> name = >"Rachit"</span>;',
+    '<span class="text-info">const</span> role = >"AI Product Developer"</span>;',
+    '<span class="text-info">const</span> role1 = >"Data Analytics Engineer"</span>;',
+    '<span class="text-info">const</span> skills = [',
+    '  >"Python"</span>, >"SQL"</span>, >"Power BI"</span>,',
+    '>"Data Visualization"</span>, >"Data Engineering"</span>, >"ETL"</span>,',
+    '  >"Azure Databricks"</span>, >"Azure Data Factory"</span>, >"PySpark"</span>,',
+    '  >"Prompt Engineering"</span>, >"AI Product Builder"</span>, >"Gen AI Engineer"</span>',
+    '];',
+    '<span class="text-info">console</span>.log>`Welcome to my portfolio site!`</span>);'
+  ];
+
+  let lineIndex = 0;
+  let charIndex = 0;
+  const typingSpeed = 15;
+  const typingText = document.getElementById('typing-text');
+
+  function typeLine() {
+    if (lineIndex < codeLines.length) {
+      let currentLine = codeLines[lineIndex];
+      typingText.innerHTML += currentLine.charAt(charIndex);
+
+      charIndex++;
+
+      if (charIndex < currentLine.length) {
+        setTimeout(typeLine, typingSpeed);
+      } else {
+        typingText.innerHTML += '<br>';
+        charIndex = 0;
+        lineIndex++;
+        setTimeout(typeLine, typingSpeed);
+      }
+    }
+  }
+
+  typeLine();
+</script>
+
+
+
+
+
+
+
+
    <!-- Work Experience Section -->
 <section id="work-experience" class="py-5 bg-light">
   <div class="container">
@@ -636,6 +705,51 @@
     localStorage.setItem('theme', isDark ? 'dark' : 'light');
   });
 </script>
+
+
+
+<script>
+  const codeLines = [
+    'const name = "Rachit";',
+    'const role = "AI Product Developer";',
+    'const role1 = "Data Analytics Engineer";',
+    'const skills = [',
+    '  "Python", "SQL", "Power BI",',
+    '  "Data Visualization", "Data Engineering", "ETL",',
+    '  "Azure Databricks", "Azure Data Factory", "PySpark",',
+    '  "Prompt Engineering", "AI Product Builder", "Gen AI Engineer"',
+    '];',
+    'console.log(`Welcome to my portfolio site!`);'
+  ];
+
+  const typingTarget = document.getElementById('typing-text');
+  let lineIndex = 0;
+  let charIndex = 0;
+
+  function typeLine() {
+    if (lineIndex < codeLines.length) {
+      const line = codeLines[lineIndex];
+      if (charIndex < line.length) {
+        typingTarget.innerHTML += line[charIndex++];
+        setTimeout(typeLine, 25);
+      } else {
+        typingTarget.innerHTML += '\n';
+        charIndex = 0;
+        lineIndex++;
+        setTimeout(typeLine, 200); // wait between lines
+      }
+    }
+  }
+
+  // Start typing on page load
+  window.addEventListener('DOMContentLoaded', typeLine);
+</script>
+
+
+
+
+
+
 
   
 </body>
